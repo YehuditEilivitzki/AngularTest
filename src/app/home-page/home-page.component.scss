@@ -1,0 +1,35 @@
+.action-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.action-button {
+    margin: 10px;
+}
+
+.search-input {
+    width: 200px;
+}
+
+.type {
+    border: 1px solid #0dcaf0;
+    border-radius: 2px;
+    margin: 5px 5px 5px 20px;
+    padding: 5px;
+    width: 200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.items-container {
+    display: flex;
+}
+
+.type-list{
+    display: flex;
+    flex-direction: column;
+}

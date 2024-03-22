@@ -1,0 +1,25 @@
+<div class="action-container">
+    <input type="text" class="form-control search-input" placeholder="search" [(ngModel)]="searchValue"
+        (keyup)="search()">
+    <button type="button" class="btn btn-info action-button" (click)="clear()">clear</button>
+    <button type="button" class="btn btn-info action-button" (click)="getData()">refresh</button>
+    <button type="button" class="btn btn-info action-button" (click)="sort()">sort</button>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked
+            (click)="changeDisplay()" />
+        <label class="form-check-label" for="flexSwitchCheckChecked">change display</label>
+    </div>
+</div>
+<div class="items-container">
+    <div class="type-list">
+        <button type="button" class="btn btn-info action-button" *ngFor="let type of typeList"
+            (click)="filterData(type)">
+            {{ type }}: {{ typeCounts[type] }}
+        </button>
+    </div>
+    <div [ngClass]="{'grid':gridDisplay}">
+        <div *ngFor="let item of filterItems">
+            <app-item [item]="item"></app-item>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.item {
+    border: 1px solid black;
+    display: flex;
+    width: 350px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.dateils {
+    border: 1px solid #0dcaf0;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.img {
+    height: 100px;
+    width: 100px;
+}
+
+.error {
+    display: none;
+}

@@ -1,0 +1,13 @@
+<div class="space">
+<button type="button" class="btn btn-info" (click)="back()">
+    <i-bs name="arrow-bar-left" width="20" height="20">
+    </i-bs>
+    Back
+</button>
+<h1>Item Details</h1>
+<div>Title : {{item.Title}}</div>
+<div>Type : {{item.Type}}</div>
+<div>Id : {{item.imdbID}}</div>
+<div> Year : {{formatYear | date}}</div>
+<div> Poster : {{item.Poster}}</div>
+</div>
